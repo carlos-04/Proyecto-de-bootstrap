@@ -1,0 +1,238 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/**********************************/
+
+
+/***********NAVBAR***********/
+
+
+/*********************************/
+
+.navbar {
+    background: #4633af !important;
+    transition: all 0.2s;
+}
+
+
+/**********************************/
+
+
+/***********SECTION HERO***********/
+
+
+/*********************************/
+
+.section-hero,
+.section-preview {
+    padding: 200px 0px;
+    background: url(../images/section-hero/hero-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/**********************************/
+
+
+/***********SECTION OPINION ***********/
+
+
+/*********************************/
+
+.section-opinion {
+    padding: 100px 0px;
+    background: #262431;
+}
+
+#carouselExampleInterval>.carousel-inner {
+    padding: 0px 100px;
+}
+
+
+/**********************************/
+
+
+/***********SECTION FEATURES ***********/
+
+
+/*********************************/
+
+.section-feature {
+    padding: 160px 0px;
+    background-color: #2f2c2f;
+}
+
+.heading-section {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.card-icon>i {
+    font-size: 55px;
+}
+
+
+/*Setting Nav*/
+
+.box-image {
+    padding-top: 20px;
+}
+
+
+/*NAVTABS*/
+
+.nav-tabs {
+    justify-content: center;
+    border: none;
+}
+
+.nav-tabs>.nav-link {
+    margin: 10px 0px 20px;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 3px solid #f1f1f8;
+    color: #f1f1f8;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nav-tabs>.nav-link.active,
+.nav-tabs>.nav-link:hover {
+    border-bottom: 0.1875rem solid #00c9db;
+    background-color: transparent;
+    color: #00c9db;
+}
+
+
+/**********************************/
+
+
+/***********SECTION PREVIEW***********/
+
+
+/*********************************/
+
+.modal-dialog-centered {
+    max-width: 700px;
+}
+
+.image-boton-preview-box::before,
+.image-boton-preview-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #17a2b8;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.image-boton-preview-box::before {
+    animation: border-pulse 1500ms ease-out infinite;
+}
+
+@keyframes border-pulse {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+/**********************************/
+
+
+/***********SECTION DETAILS***********/
+
+
+/*********************************/
+
+.section-details {
+    padding: 100px 0;
+    background-color: #262431;
+    color: white;
+}
+
+.box-details {
+    padding: 30px 0;
+    padding-top: 15px;
+}
+
+
+/**********************************/
+
+
+/***********SECTION FORMULARIO***********/
+
+
+/*********************************/
+
+.section-contact-form {
+    background-color: #2f2c3d;
+    color: white;
+    padding: 100px 0;
+}
+
+.contact-form-field {
+    padding: 40px 0;
+}
+
+.contact-form-field {
+    background-color: #413d52;
+    color: white;
+}
+
+.contact-form-field:focus {
+    border: 1px solid #17a2b8;
+    outline: none;
+    background-color: #413d52;
+    color: white;
+    box-shadow: none;
+}
+
+footer {
+    background-color: #4633af;
+    color: white;
+}
+
+.footer-copyright {
+    background-color: #262431;
+}
+
+.images-footer>a {
+    padding: 0 25px;
+}
+
+.imagen-insta {
+    width: 50px;
+    height: 50px;
+}
+
+
+/**********************************/
+
+
+/***********Medias query***********/
+
+
+/*********************************/
+
+@media(min-width: 992px) {
+    /*navbar*/
+    .navbar {
+        background-color: transparent !important;
+    }
+    .background-scroll-down {
+        background-color: #4633af !important;
+    }
+}
